@@ -1,5 +1,6 @@
 package com.mb.smart.trader.usecases.trade;
 
+import com.mb.smart.trader.domains.DatePriceValue;
 import com.mb.smart.trader.domains.PriceContext;
 import com.mb.smart.trader.domains.VoteType;
 import com.mb.smart.trader.domains.indicators.IndicatorType;
@@ -11,11 +12,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class PolyTrendLineArithmeticMovingAverageVoter implements TraderVote {
+public class TrendLineArithmeticMovingAverageVoter implements TraderVote {
 
     @Override
     public VoteType executor(final PriceContext priceContext) {
-        final var pricesSimpleAvg = ((IndicatorValue<List<Double>>) priceContext
+        final var pricesSimpleAvg = ((IndicatorValue<List<DatePriceValue>>) priceContext
                 .getIndicators()
                 .get(IndicatorType.ARITHMETIC_MOVING_AVERAGE))
                 .getValue();
