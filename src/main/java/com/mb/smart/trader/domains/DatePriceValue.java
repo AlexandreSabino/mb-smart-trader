@@ -9,5 +9,5 @@ import java.time.LocalDateTime;
 @Builder
 public class DatePriceValue {
     private double priceValue;
-    public LocalDateTime date;
+    private LocalDateTime date;
 }

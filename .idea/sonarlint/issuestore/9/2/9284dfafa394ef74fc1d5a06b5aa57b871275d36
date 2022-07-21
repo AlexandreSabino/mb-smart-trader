@@ -1,6 +1,0 @@
-
-U	java:S106#"9Replace this use of System.out or System.err by a logger.(ØË„ó8²¥®ü”0
-Q
-java:S1481"4Remove this unused "pricesSimpleAvg" local variable.(§óÛ†8—¬û”0
-`
-java:S1854"CRemove this useless assignment to local variable "pricesSimpleAvg".(§óÛ†8—¬û”0
